@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: 85%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.placeholder__title {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  padding: 30px 0;
+}
+@media (max-width: 650px) {
+  .placeholder__title {
+    font-size: 28px;
+  }
+}
+.placeholder__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  grid-row-gap: 40px;
+  padding-bottom: 50px;
+}
+@media (max-width: 1300px) {
+  .placeholder__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 1060px) {
+  .placeholder__cards {
+    grid-template-columns: repeat(2, 0.6fr);
+  }
+}
+@media (max-width: 650px) {
+  .placeholder__cards {
+    grid-template-columns: 0.8fr;
+    justify-content: center;
+  }
+  .placeholder__cards__card__info__title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 450px) {
+  .placeholder__cards {
+    grid-template-columns: 1fr;
+  }
+}
+.placeholder__card {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.3s;
+  border-radius: 15px;
+}
+.placeholder__card:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.placeholder__card__img {
+  height: 200px;
+}
+.placeholder__card__img img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.placeholder__card__info {
+  padding: 15px;
+}
+.placeholder__card__info__title {
+  font-size: 20px;
+  font-weight: 550;
+  padding: 8px 0;
+}
+.placeholder__card__info__title span {
+  font-size: 24px;
+}
+.placeholder__card__info__username {
+  font-size: 16px;
+  font-style: italic;
+  padding-bottom: 8px;
+}
+.placeholder__card__info__username span {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+.placeholder__card__info__email, .placeholder__card__info__website {
+  font-size: 16px;
+  font-style: italic;
+  padding-bottom: 2px;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+.placeholder__card__info__email span, .placeholder__card__info__website span {
+  font-style: normal;
+  border-bottom: 1.5px solid transparent;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.placeholder__card__info__email span:hover, .placeholder__card__info__website span:hover {
+  border-color: black;
+}
+.placeholder__card__info__phone {
+  font-style: italic;
+  font-size: 16px;
+  padding-bottom: 8px;
+}
+.placeholder__card__info__phone span {
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 500;
+}
